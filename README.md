@@ -9,15 +9,16 @@ At first, I extracted sift feature upon all image feature, dumping features to p
 
 Secondly, I experimented 3 cases for matching speed.
 
-- [1] Linear search on each indexed feature
-- Linear search with FLANN method on each indexed feature  
-- [2] Linear search on prefetching indexed features
-- [3] Parallel search on prefetching indexed features
+    - [1] Linear search on each indexed feature
+    - Linear search with FLANN method on each indexed feature  
+    - [2] Linear search on prefetching indexed features
+    - [3] Parallel search on prefetching indexed features
 
-- img_augmentor.py: To make query images, augment all original image
-- utils.py: parsing, prefetching, ranking
-- sift_controller.py: SIFT warpper of cv2.SIFT()
-- main.py: main
+### Files
+    - img_augmentor.py: To make query images, augment all original image
+    - utils.py: parsing, prefetching, ranking
+    - sift_controller.py: SIFT warpper of cv2.SIFT()
+    - main.py: main
 
 
 
@@ -26,9 +27,9 @@ Secondly, I experimented 3 cases for matching speed.
 CPU : i7-8700K CPU @  3.70GHz
 Number of Test image: 3,334
 
-- [1] : 784ms
-- [2] : 56ms
-- [3] : 8ms
+    - [1] : 784ms
+    - [2] : 56ms
+    - [3] : 8ms
 
 
 ## Author
