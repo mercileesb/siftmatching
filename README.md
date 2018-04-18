@@ -14,6 +14,11 @@ Secondly, I experimented 3 cases for matching speed.
 - [2] Linear search on prefetching indexed features
 - [3] Parallel search on prefetching indexed features
 
+- img_augmentor.py: To make query images, augment all original image
+- utils.py: parsing, prefetching, ranking
+- sift_controller.py: SIFT warpper of cv2.SIFT()
+- main.py: main
+
 
 
 ## Performance
